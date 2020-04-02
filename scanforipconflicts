@@ -1,0 +1,1 @@
+sudo arp-scan -I wlp2s0 -l | uniq -D -w 15

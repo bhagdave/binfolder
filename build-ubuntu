@@ -1,0 +1,6 @@
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install -y apache2 awscli composer evolution gnome-tweak-tool gnucash vim mysql-server pandoc php 
+
+

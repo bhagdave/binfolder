@@ -1,0 +1,1 @@
+git branch -r --merged | grep origin | grep -v '>' | grep -v master | grep -v test | grep -v staging |xargs -L1 | awk '{split($0,a,"/"); print a[2]}' | xargs git push origin --delete

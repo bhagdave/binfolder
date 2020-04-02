@@ -1,0 +1,3 @@
+#!/bin/bash
+cp /home/dad/templates/template.c $1.c
+nano $1.c
