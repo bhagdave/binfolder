@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -rtv /home/dave/ /media/dave/Backup/HomeFolder/
