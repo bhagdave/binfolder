@@ -1,0 +1,6 @@
+#!/bin/bash
+now=`date +"%m_%d_%Y"`
+echo "${now}"
+file="/home/dave/dumps/db-$now.sql.gpg.gz"
+echo "$file"
+mysqldump -u tsroot -h tenancystream-instance-1.cr3hn5odxqqa.eu-west-2.rds.amazonaws.com -p6XQYFxffUhNjY4Jv tenancystream | gpg -e -r dave@tenancystream.com | gzip > "$file"
